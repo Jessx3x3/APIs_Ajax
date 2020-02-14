@@ -1,7 +1,30 @@
 #box{
-    width: 800px;
-    height: 800px;
+    width: 1000px;
+    height: 1200px;
     display: grid;
-    grid-template-columns: repeat(14,1fr);
-    grid-template-rows: repeat(11,1fr);
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(81,1fr);
+}
+#capaCarga{
+    text-align: center;
+    margin-top: 22%;
+}
+#pokemonInfo{
+    width: 20%;
+    height: 48%;
+    background-color: brown;
+    outline: solid yellow;
+    top: 20%;
+    margin-left: 77%;
+    position: fixed;
+}
+.btn_salir{
+    text-align: center;
+    background-color: brown;
+    color: white;
+    border: yellow;
+    position: absolute;
+    left: 90%;
+}
+.pokemon{
 }

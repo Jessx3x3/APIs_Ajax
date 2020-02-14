@@ -1,40 +1,48 @@
+
 function capaCarga(onOff){
     onOff ? $("#capaCarga").show() : $("#capaCarga").hide();
 }
 
 function displayPokemon(){
-    $('#box').hide();
-    var pokemon = '';
-    for (var i = 1; i < 151; i++) {
-        pokemon += "<div class='pokemon'><img id='" + i + "' src='http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/" + i + ".png'></div>";
-        /*
-        let poke = `<div>
-        <img id="${i}" src='http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${i}.png'>
 
-        STRING INTERPOLATION -`` BACKTIP
-        
-                    </div>`*/
+    $('#box').hide();
+
+    var pokemon = '';
+
+    for (var i = 1; i < 806; i++) {
+        pokemon += "<div class='pokemon'><img id='" + i + "' src='http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/" + i + ".png'></div>";
     }
+
     $('#box').append(pokemon);
+
     setTimeout(function(){
         $('#box').show();
         capaCarga(false);
-    }, 3000);
+    }, 10000);
 }
 
-$(document).ready( function(){
+function showPokeInfo(numberId){
+    imagen = "http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/"+numberId+".png";
+}
 
+
+$(document).ready( function(){
+    
     capaCarga(true);
+
     displayPokemon();
+
+    $("#pokemonInfo").hide();
+
     $("img").click(function(){
-        //showPokeInfo( $(this).attr('id') );
-        console.log($(this).attr('id'));
+        showPokeInfo($(this).attr('id'));
+        $("#pokemonInfo").show();
+        console.log("N° ID Pokemon: ["+$(this).attr('id')+"]");
+    })
+    $(".btn_salir").click(function(){
+        $("#pokemonInfo").hide();
     })
 
-    
-    
-
-    /*
     $.ajax({
         type: "GET",
         url: "https://pokeapi.co/api/v2/pokemon?limit=151",
@@ -46,5 +54,6 @@ $(document).ready( function(){
             console.log("Error, pokemon not found");
         }    
     });
-    */
+
+
 })
