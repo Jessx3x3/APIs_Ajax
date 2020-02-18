@@ -1,30 +1,43 @@
-#box{
-    width: 1000px;
-    height: 1200px;
+#content
+{
+    width: 1330px;
+    height: 2100px;
+    background: url(recursos/wallpaper.jpg);
     display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(81,1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(40, 1fr);
 }
-#capaCarga{
+#load
+{
     text-align: center;
     margin-top: 22%;
 }
-#pokemonInfo{
-    width: 20%;
-    height: 48%;
-    background-color: brown;
-    outline: solid yellow;
-    top: 20%;
-    margin-left: 77%;
-    position: fixed;
-}
-.btn_salir{
+#pokemon_info
+{
+    width: 19%;
+    position: sticky;
+    bottom: 50%;
+    left: 79.4%;
     text-align: center;
-    background-color: brown;
-    color: white;
-    border: yellow;
-    position: absolute;
-    left: 90%;
+    background-color: cornflowerblue;
+    outline: solid cadetblue;
 }
-.pokemon{
+p{
+    margin: 6%;
+}
+button{
+    text-align: right;
+    background-color: darkcyan;
+    color: wheat;
+    margin-left: 90%;
+}
+.name_d{
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: large;
+}
+.types, .weight, .height{
+    width: 90%;
+    height: 50%;
+    outline: solid cadetblue;
 }

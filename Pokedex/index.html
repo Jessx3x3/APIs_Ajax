@@ -2,17 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="document.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div id="capaCarga"><img src="recursos/ajax-loader.gif" alt="capaCarga"></div>
-    <div id="box"></div>
-    <div id="pokemonInfo">
-        <button class="btn_salir">X</button>
+    <div id ="load"><img src="recursos/ajax-loader.gif" alt="capaCarga"></div>
+    <div id = "content"></div>
+    <div id = "pokemon_info">
+        <button>X</button>
+        <p class = "name_d">Pokemon Name</p>
+        <img class = "img_pokemon" src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png" alt="">
+        <p class = "types">Type</p>
+        <p class = "height">7</p>
+        <p class = "weight">8</p>
+        <br>
     </div>
+    
 </body>
 </html>
