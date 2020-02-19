@@ -1,7 +1,7 @@
 #content
 {
     width: 1330px;
-    height: 2100px;
+    height: 2500px;
     background: url(recursos/wallpaper.jpg);
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -10,7 +10,10 @@
 #load
 {
     text-align: center;
-    margin-top: 22%;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    
 }
 #pokemon_info
 {
@@ -40,4 +43,13 @@ button{
     width: 90%;
     height: 50%;
     outline: solid cadetblue;
+}
+.pokemon{
+    margin: 10%;
+    background-color: salmon;
+    border-radius: 5%;
+    border: 1px solid purple;
+}
+header{
+    text-align: center;
 }
