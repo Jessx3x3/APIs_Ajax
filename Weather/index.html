@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id = "content">
+        <div id = "box_form">
+            <h1>Tiempo</h1>
+            <form>
+                <label for="ciudad"> Ingrese Ciudad: </label>
+                <input type= "text" id = "ciudad" name = "ciudad" placeholder="Ingrese ciudad">
+                <input type= "submit" id ="btn_submit" value= "Buscar" ><br><br>
+            </form>
+                <label class = 'label'>Temperatura actual</label>
+                <p id = 'actual'></p>
+                <img id = 'img_actual' src="" alt="">
+
+                <label class = 'label'>Temperatura mínima</label>
+                <p id = 'min'></p>
+                <img id = 'img_min' src="" alt="">
+
+                <label class = 'label'>Temperatura máxima</label>
+                <p id = 'max'></p>
+                <img id = 'img_max' src="" alt="">
+            <div id = "show" ></div>
+        </div>
+    </div>
+</body>
+</html>

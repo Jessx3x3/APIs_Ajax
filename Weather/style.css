@@ -1,0 +1,49 @@
+#content{
+    width: 1350px;
+    height: 650px;
+    background: url("recursos/sun_wallpaper.jpg");
+}
+#box_form{
+    width: 30%;
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 5%;
+    border-radius: 4%;
+    background: url("recursos/text_in.jpg");
+}
+form{
+    text-align: center;
+}
+label{
+    font-style: oblique;
+    font-size: medium;
+}
+#btn_submit{
+    box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+h1{
+    text-align: center;
+    font-style: oblique;
+}
+.label{
+    text-align: left;
+    margin: 10%;
+}
+#actual, #min, #max{
+    text-align: left;
+    font-weight: bold;
+    margin: 9%;
+}
