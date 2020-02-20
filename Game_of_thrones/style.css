@@ -1,0 +1,31 @@
+#content{
+    width: 1350px;
+    height: 900px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+img{
+    width: 80%;
+    margin: 10%;
+}
+#information{
+    width: 50%;
+    height: 34%;
+    outline: solid blue;
+    margin: 5%;
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+}
+p{
+    color: white;
+    margin: 6%;
+}
+h1{
+    color: white;
+    position: absolute;
+    bottom: 52%;
+    left: 25%;
+}
