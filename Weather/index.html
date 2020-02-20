@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div id = "content">
+    <div id = 'content'>
         <div id = "box_form">
             <h1>Tiempo</h1>
             <form>
@@ -16,18 +16,17 @@
                 <input type= "text" id = "ciudad" name = "ciudad" placeholder="Ingrese ciudad">
                 <input type= "submit" id ="btn_submit" value= "Buscar" ><br><br>
             </form>
-                <label class = 'label'>Temperatura actual</label>
-                <p id = 'actual'></p>
-                <img id = 'img_actual' src="" alt="">
-
-                <label class = 'label'>Temperatura mínima</label>
-                <p id = 'min'></p>
-                <img id = 'img_min' src="" alt="">
-
-                <label class = 'label'>Temperatura máxima</label>
-                <p id = 'max'></p>
-                <img id = 'img_max' src="" alt="">
-            <div id = "show" ></div>
+            <div id = 'box_datos'>
+                <div class = "temp">
+                    <p id = 'actual'></p>
+                </div>
+                    <p id = 'gradosC'>°C</p>
+                <div id= 'informacion'>
+                    <p id = 'clouds'>°C</p>
+                    <p id = 'humidity'>°C</p>
+                    <p id = 'wind'>°C</p>
+                </div>    
+            </div>    
         </div>
     </div>
 </body>

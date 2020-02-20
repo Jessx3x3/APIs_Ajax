@@ -2,31 +2,42 @@ $(document).ready(function() {
 
     var apiKey = '9303e73d39213b05d3e0057c4cdfb68d';
 
-    $(".label").hide();
+    $("#box_datos").hide();
 
     $('form').submit(function() {
 
         var ciudad = $("#ciudad").val();
         url = 'http://api.openweathermap.org/data/2.5/weather?q='+ciudad+'&appid='+apiKey;
 
-        
-        $.get(url, function(res) {
 
-            console.log(res);
+        $.get(url, function(res) {
 
             var tempActual = res.main.temp;
             
+            var humidity = res.main.humidity;
+
+            var clouds = res.clouds.all;
+
+            var wind = res.wind.speed;
+
             $("#actual").text(Math.trunc(fahrenheitToCelcius(tempActual))); 
 
-            var tempMin = res.main.temp_min;
+            $("#clouds").text("Nubes: "+clouds+ "%"); 
 
-            $("#min").text(Math.trunc(fahrenheitToCelcius(tempMin)));
+            $("#humidity").text("Humedad: "+humidity+ "%"); 
 
-            var tempMax = res.main.temp_max;
+            $("#wind").text("Viento: "+wind
+            + "km/h"); 
 
-            $("#max").text(Math.trunc(fahrenheitToCelcius(tempMax)));
+            //var tempMin = res.main.temp_min;
 
-            $(".label").show();
+            //$("#min").text(Math.trunc(fahrenheitToCelcius(tempMin)));
+
+            //var tempMax = res.main.temp_max;
+
+            //$("#max").text(Math.trunc(fahrenheitToCelcius(tempMax)));
+
+            $("#box_datos").show();
 
         }, 'json');
         
